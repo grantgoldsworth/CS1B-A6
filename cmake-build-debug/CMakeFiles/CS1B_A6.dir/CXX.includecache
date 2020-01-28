@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Grant/CS1B/CS1B-A6/assignment5functions.cpp
+functions.h
+C:/Users/Grant/CS1B/CS1B-A6/functions.h
+
+C:/Users/Grant/CS1B/CS1B-A6/functions.h
+iostream
+-
+iomanip
+-
+string
+-
+windows.h
+-
+
