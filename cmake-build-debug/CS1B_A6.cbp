@@ -89,6 +89,9 @@
 		<Unit filename="C:/Users/Grant/CS1B/CS1B-A6/main.cpp">
 			<Option target="CS1B_A6"/>
 		</Unit>
+		<Unit filename="C:/Users/Grant/CS1B/CS1B-A6/tolowerstring.cpp">
+			<Option target="CS1B_A6"/>
+		</Unit>
 		<Unit filename="C:/Users/Grant/CS1B/CS1B-A6/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

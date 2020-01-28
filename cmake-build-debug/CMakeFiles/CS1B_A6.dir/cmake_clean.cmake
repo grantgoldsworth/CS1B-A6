@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/CS1B_A6.dir/assignment5functions.cpp.obj"
   "CMakeFiles/CS1B_A6.dir/main.cpp.obj"
+  "CMakeFiles/CS1B_A6.dir/tolowerstring.cpp.obj"
   "CS1B_A6.exe"
   "CS1B_A6.exe.manifest"
   "CS1B_A6.pdb"

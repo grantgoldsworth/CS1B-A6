@@ -9,6 +9,7 @@
 #include <iomanip>
 #include <string>
 #include <windows.h>
+#include <fstream>
 using namespace std;
 
 #ifndef CS1B_A6_FUNCTIONS_H
@@ -27,15 +28,17 @@ struct playerType
 
 char GetChoice(int, int);
 
-void editPlayer(playerType []);
+string tolowerstring(string);
 
-int lookUpPlayer(playerType []);
+void editPlayer(playerType [], int);
+
+int lookUpPlayer(const playerType [], int);
 
 void printPlayer(playerType);
 
 void printTeam(playerType []);
 
-void readFile(playerType [], string inputFile);
+void readFile(playerType [], int, string inputFile);
 
 void writeFile(playerType [], string outputFile);
 

@@ -13,10 +13,30 @@ int main() {
      * -----------------------------------------------------------------------------
      * MENU_INDENT  : CALC -  Used to format the main menu of serendipity
      *******************************************************************************/
-    const int MENU_INDENT = 25;
+    const int MENU_INDENT  = 25;
+    const int PLAYER_COUNT = 10;
 
+    playerType roster[PLAYER_COUNT];
     char choice;
+    int  index;
 
+    readFile(roster, PLAYER_COUNT,"teamRoster.txt");
+
+    cout << "\n\n OUTPUTING THE CONTENTS OF TEAM ROSTER ARRAY\n\n";
+    for (int j = 0; j < PLAYER_COUNT; j ++) {
+        cout << roster[j].name << endl;
+        cout << roster[j].position << endl;
+        cout << roster[j].catches << endl;
+        cout << roster[j].touchdowns << endl;
+        cout << roster[j].passingYards << endl;
+        cout << roster[j].receivingYards << endl;
+        cout << roster[j].rushingYards << endl << endl;
+    }
+    cout << endl;
+    system("pause");
+    system("cls");
+
+    /*
     do {
         // main menu screen output
         cout << right;
@@ -34,22 +54,23 @@ int main() {
 
         switch (choice) {
             case '1':
-                cout << "Look up player\n\n";
+                index = lookUpPlayer(roster, PLAYER_COUNT);
                 break;
 
             case '2':
-                cout << "Edit a player\n\n";
+                editPlayer(roster, PLAYER_COUNT);
                 break;
 
             case '3':
-                cout << "Print team roster\n\n";
+                printTeam(roster);
                 break;
 
             default:
                 break;
-        }
+        } // end switch (choice)
+        system("cls");
 
     } while (choice != '4');
-
+    */
     return 0;
 }

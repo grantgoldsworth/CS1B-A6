@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/Grant/CS1B/CS1B-A6/assignment5functions.cpp" "C:/Users/Grant/CS1B/CS1B-A6/cmake-build-debug/CMakeFiles/CS1B_A6.dir/assignment5functions.cpp.obj"
   "C:/Users/Grant/CS1B/CS1B-A6/main.cpp" "C:/Users/Grant/CS1B/CS1B-A6/cmake-build-debug/CMakeFiles/CS1B_A6.dir/main.cpp.obj"
+  "C:/Users/Grant/CS1B/CS1B-A6/tolowerstring.cpp" "C:/Users/Grant/CS1B/CS1B-A6/cmake-build-debug/CMakeFiles/CS1B_A6.dir/tolowerstring.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

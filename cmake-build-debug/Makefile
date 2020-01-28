@@ -176,6 +176,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles\CS1B_A6.dir\build.make CMakeFiles/CS1B_A6.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+tolowerstring.obj: tolowerstring.cpp.obj
+
+.PHONY : tolowerstring.obj
+
+# target to build an object file
+tolowerstring.cpp.obj:
+	$(MAKE) -f CMakeFiles\CS1B_A6.dir\build.make CMakeFiles/CS1B_A6.dir/tolowerstring.cpp.obj
+.PHONY : tolowerstring.cpp.obj
+
+tolowerstring.i: tolowerstring.cpp.i
+
+.PHONY : tolowerstring.i
+
+# target to preprocess a source file
+tolowerstring.cpp.i:
+	$(MAKE) -f CMakeFiles\CS1B_A6.dir\build.make CMakeFiles/CS1B_A6.dir/tolowerstring.cpp.i
+.PHONY : tolowerstring.cpp.i
+
+tolowerstring.s: tolowerstring.cpp.s
+
+.PHONY : tolowerstring.s
+
+# target to generate assembly for a file
+tolowerstring.cpp.s:
+	$(MAKE) -f CMakeFiles\CS1B_A6.dir\build.make CMakeFiles/CS1B_A6.dir/tolowerstring.cpp.s
+.PHONY : tolowerstring.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -191,6 +218,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... tolowerstring.obj
+	@echo ... tolowerstring.i
+	@echo ... tolowerstring.s
 .PHONY : help
 
 

@@ -7,3 +7,6 @@ CMakeFiles/CS1B_A6.dir/assignment5functions.cpp.obj: ../functions.h
 CMakeFiles/CS1B_A6.dir/main.cpp.obj: ../functions.h
 CMakeFiles/CS1B_A6.dir/main.cpp.obj: ../main.cpp
 
+CMakeFiles/CS1B_A6.dir/tolowerstring.cpp.obj: ../functions.h
+CMakeFiles/CS1B_A6.dir/tolowerstring.cpp.obj: ../tolowerstring.cpp
+

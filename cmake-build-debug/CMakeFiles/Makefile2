@@ -73,12 +73,12 @@ preinstall:
 CMakeFiles/CS1B_A6.dir/all:
 	$(MAKE) -f CMakeFiles\CS1B_A6.dir\build.make CMakeFiles/CS1B_A6.dir/depend
 	$(MAKE) -f CMakeFiles\CS1B_A6.dir\build.make CMakeFiles/CS1B_A6.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Grant\CS1B\CS1B-A6\cmake-build-debug\CMakeFiles --progress-num=1,2,3 "Built target CS1B_A6"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Grant\CS1B\CS1B-A6\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4 "Built target CS1B_A6"
 .PHONY : CMakeFiles/CS1B_A6.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/CS1B_A6.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Grant\CS1B\CS1B-A6\cmake-build-debug\CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Grant\CS1B\CS1B-A6\cmake-build-debug\CMakeFiles 4
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/CS1B_A6.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Grant\CS1B\CS1B-A6\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/CS1B_A6.dir/rule
