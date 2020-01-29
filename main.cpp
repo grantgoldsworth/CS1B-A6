@@ -36,7 +36,7 @@ int main() {
     system("pause");
     system("cls");
 
-    /*
+
     do {
         // main menu screen output
         cout << right;
@@ -51,6 +51,7 @@ int main() {
         cout << right;
 
         choice = GetChoice(1, 4);
+        system("cls");
 
         switch (choice) {
             case '1':
@@ -71,6 +72,5 @@ int main() {
         system("cls");
 
     } while (choice != '4');
-    */
     return 0;
 }

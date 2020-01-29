@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/Grant/CS1B/CS1B-A6/assignment5functions.cpp
+functions.h
+C:/Users/Grant/CS1B/CS1B-A6/functions.h
+
 C:/Users/Grant/CS1B/CS1B-A6/functions.h
 iostream
 -
@@ -17,8 +21,4 @@ windows.h
 -
 fstream
 -
-
-C:/Users/Grant/CS1B/CS1B-A6/main.cpp
-functions.h
-C:/Users/Grant/CS1B/CS1B-A6/functions.h
 

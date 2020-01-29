@@ -73,7 +73,6 @@ char GetChoice(int min, int max) {
 
     } while (invalidInput);
 
-    system("cls");
     return input;
 }
 
@@ -97,72 +96,85 @@ void editPlayer(playerType teamRoster[], const int PLAYER_COUNT) {
 
     int playerIndex;
     char choice;
-    playerType targetPlayer;
 
     playerIndex  = lookUpPlayer(teamRoster, PLAYER_COUNT);
-    targetPlayer = teamRoster[playerIndex];
+    cout << "\nPLAYER INDEX: " << playerIndex << endl;
 
+    if (playerIndex != -1) {
+        do {
+            cout << left;
+            cout << setfill('=') << setw(MENU_SIZE) << '=' << endl;
+            cout << setfill(' ');
+            cout << setw(MENU_SIZE) << "| " << "| CURRENT VALUES\n";
+            cout << setw(MENU_SIZE) << "| [1] Edit name" << ": " << teamRoster[playerIndex].name << endl;
+            cout << setw(MENU_SIZE) << "| [2] Edit position" << ": " << teamRoster[playerIndex].position << endl;
+            cout << setw(MENU_SIZE) << "| [3] Edit number of touchdowns" << ": " << teamRoster[playerIndex].touchdowns
+                 << endl;
+            cout << setw(MENU_SIZE) << "| [4] Edit number of catches   " << ": " << teamRoster[playerIndex].catches
+                 << endl;
+            cout << setw(MENU_SIZE) << "| [5] Edit number of passing yards" << ": "
+                 << teamRoster[playerIndex].passingYards
+                 << endl;
+            cout << setw(MENU_SIZE) << "| [6] Edit number of receiving yards" << ": "
+                 << teamRoster[playerIndex].receivingYards << endl;
+            cout << setw(MENU_SIZE) << "| [7] Edit number of rushing yards" << ": "
+                 << teamRoster[playerIndex].rushingYards
+                 << endl;
+            cout << setw(MENU_SIZE) << "| [8] Return to Main Menu" << "|\n";
+            cout << setfill('=') << setw(MENU_SIZE) << '=' << endl;
 
-    cout << left;
-    cout << setfill('=') << setw(MENU_SIZE) << '=' << endl;
+            choice = GetChoice(1, 8);
+
+            switch (choice) {
+                case '1':
+                    cout << "Edit player's name: ";
+                    getline(cin, teamRoster[playerIndex].name);
+                    break;
+
+                case '2':
+                    cout << "Edit position of " << teamRoster[playerIndex].name << ": ";
+                    getline(cin, teamRoster[playerIndex].position);
+                    break;
+
+                case '3':
+                    cout << "Edit touchdowns for " << teamRoster[playerIndex].name << ": ";
+                    cin >> teamRoster[playerIndex].touchdowns;
+                    cin.ignore(1000, '\n');
+                    break;
+
+                case '4':
+                    cout << "Edit catches for " << teamRoster[playerIndex].name << ": ";
+                    cin >> teamRoster[playerIndex].catches;
+                    cin.ignore(1000, '\n');
+                    break;
+
+                case '5':
+                    cout << "Edit passing yards for " << teamRoster[playerIndex].name << ": ";
+                    cin >> teamRoster[playerIndex].passingYards;
+                    cin.ignore(1000, '\n');
+                    break;
+
+                case '6':
+                    cout << "Edit receiving yards for " << teamRoster[playerIndex].name << ": ";
+                    cin >> teamRoster[playerIndex].receivingYards;
+                    cin.ignore(1000, '\n');
+                    break;
+
+                case '7':
+                    cout << "Edit rushing yards for " << teamRoster[playerIndex].name << ": ";
+                    cin >> teamRoster[playerIndex].rushingYards;
+                    cin.ignore(1000, '\n');
+                    break;
+
+                default:
+                    break;
+            }
+            system("cls");
+
+        } while (choice != '8');
+    } // end if (playerIndex != -1)
+
     cout << setfill(' ');
-    cout << setw(MENU_SIZE) << "| "                                   << "| CURRENT VALUES\n";
-    cout << setw(MENU_SIZE) << "| [1] Edit name"                      << ": " << targetPlayer.name << endl;
-    cout << setw(MENU_SIZE) << "| [2] Edit position"                  << ": " << targetPlayer.position << endl;
-    cout << setw(MENU_SIZE) << "| [3] Edit number of touchdowns"      << ": " << targetPlayer.touchdowns << endl;
-    cout << setw(MENU_SIZE) << "| [4] Edit number of catches   "      << ": " << targetPlayer.catches << endl;
-    cout << setw(MENU_SIZE) << "| [5] Edit number of passing yards"   << ": " << targetPlayer.passingYards << endl;
-    cout << setw(MENU_SIZE) << "| [6] Edit number of receiving yards" << ": " << targetPlayer.receivingYards << endl;
-    cout << setw(MENU_SIZE) << "| [7] Edit number of rushing yards"   << ": " << targetPlayer.rushingYards << endl;
-    cout << setw(MENU_SIZE) << "| [8] Return to Main Menu"            << "|\n";
-    cout << setfill('=') << setw(MENU_SIZE) << '=' << endl;
-
-    cout << "Enter option [1-8]: ";
-    choice = GetChoice(1, 8);
-
-    switch (choice) {
-        case '1':
-            cout << "Edit player's name: ";
-            getline(cin, targetPlayer.name);
-            break;
-
-        case '2':
-            cout << "Edit position of " << targetPlayer.name << ": ";
-            getline(cin, targetPlayer.position);
-            break;
-
-        case '3':
-            cout << "Edit touchdowns for " << targetPlayer.name << ": ";
-            cin  >> targetPlayer.touchdowns;
-            cin.ignore(1000, '\n');
-
-        case '4':
-            cout << "Edit catches for " << targetPlayer.name << ": ";
-            cin  >> targetPlayer.catches;
-            cin.ignore(1000, '\n');
-
-        case '5':
-            cout << "Edit passing yards for " << targetPlayer.name << ": ";
-            cin  >> targetPlayer.passingYards;
-            cin.ignore(1000, '\n');
-
-        case '6':
-            cout << "Edit receiving yards for " << targetPlayer.name << ": ";
-            cin  >> targetPlayer.receivingYards;
-            cin.ignore(1000, '\n');
-
-        case '7':
-            cout << "Edit rushing yards for " << targetPlayer.name << ": ";
-            cin  >> targetPlayer.rushingYards;
-            cin.ignore(1000, '\n');
-
-        default:
-            break;
-    }
-    system("cls");
-
-
-
     system("pause");
     return;
 }
@@ -182,41 +194,58 @@ void editPlayer(playerType teamRoster[], const int PLAYER_COUNT) {
  ******************************************************************************/
 
 int lookUpPlayer(const playerType teamRoster[], const int PLAYER_COUNT) {
-    int     index;
-    string  target;
-    bool    found;
-    int     i;
+    int index;
+    string target;
+    bool found;
+    int i;
+    int matchCount;
+    char choice;
+    string nameMatches[PLAYER_COUNT];
+    int nameMatchIndicies[PLAYER_COUNT];
+
+    matchCount = 0;
+    index      = -1;
 
     cout << "Who would you like to search for? ";
     getline(cin, target);
-
     target = tolowerstring(target);
-    i = 0;
-    found = false;
-    index = -1;
 
-    while (i < PLAYER_COUNT && !found) {
+
+    for (i = 0; i < PLAYER_COUNT; i++) {
+
         // convert player's name to lowercase to allow for case insensitive searching
         string lowerCaseName = tolowerstring(teamRoster[i].name);
 
-        // if substring target is within name, set found to true and return index of
-        //     player location in the team roster array
+        // if there is a match of any kind, add it to list of matches
+        // record the index of each match for when user selects which one they want.
         if (lowerCaseName.find(target) != string::npos) {
-            index = i;
-            found = true;
+            nameMatches[matchCount] = teamRoster[i].name;
+            nameMatchIndicies[matchCount] = i;
+            matchCount++;
         }
-        i ++;
+    } // end for (i = 0; i < PLAYER_COUNT; i ++)
+
+    cout << "Matches for <" << target << ">:\n";
+    for (int j = 0; j < matchCount; j++) {
+        cout << "[" << j + 1 << "] " << nameMatches[j] << " with roster index " << nameMatchIndicies[j] << endl;
     }
 
-    if (found) {
-        cout << "Player found!\n";
+    if (matchCount != 0) {
+        cout << "[0] Cancel and return to menu\n";
+        choice = GetChoice(0, matchCount + 1);
+
+        if (tolower(choice) != '0') {
+            index = nameMatchIndicies[choice - 49];
+        }
     }
     else {
-        cout << "Player not found!\n";
+        cout << "There were no matches for <" << target << ">.\n";
     }
 
+    system("pause");
     return index;
 }
+
 
 
 
