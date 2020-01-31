@@ -30,16 +30,18 @@ char GetChoice(int, int);
 
 string tolowerstring(string);
 
+void lookUpPlayer(const playerType [], int);
+
+int searchPlayer(const playerType [], int, string);
+
 void editPlayer(playerType [], int);
 
-int lookUpPlayer(const playerType [], int);
+void printPlayer(const playerType [], int, int);
 
-void printPlayer(playerType);
+void printTeam(const playerType [], int);
 
-void printTeam(playerType []);
+void readFile(playerType [], int, string);
 
-void readFile(playerType [], int, string inputFile);
-
-void writeFile(playerType [], string outputFile);
+void writeFile(const playerType [], int, string);
 
 #endif //CS1B_A6_FUNCTIONS_H

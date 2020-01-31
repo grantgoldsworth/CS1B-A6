@@ -14,11 +14,12 @@
     <list default="true" id="998878ea-f578-4574-8fd0-74e17150fa29" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignment5functions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/assignment5functions.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CS1B_A6.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CS1B_A6.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CS1B_A6.dir/assignment5functions.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CS1B_A6.dir/assignment5functions.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CS1B_A6.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CS1B_A6.dir/main.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CS1B_A6.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CS1B_A6.dir/objects.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CS1B_A6.dir/tolowerstring.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CS1B_A6.dir/tolowerstring.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CS1B_A6.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CS1B_A6.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions.h" beforeDir="false" afterPath="$PROJECT_DIR$/functions.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -81,6 +82,7 @@
         </serviceView>
       </list>
     </option>
+    <option name="showServicesTree" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -95,7 +97,10 @@
       <workItem from="1580172799709" duration="2462000" />
       <workItem from="1580175269130" duration="3243000" />
       <workItem from="1580231994523" duration="6414000" />
-      <workItem from="1580259404809" duration="4043000" />
+      <workItem from="1580259404809" duration="4409000" />
+      <workItem from="1580403457614" duration="6404000" />
+      <workItem from="1580438529808" duration="603000" />
+      <workItem from="1580485611575" duration="6420000" />
     </task>
     <servers />
   </component>
@@ -142,10 +147,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580261794880" />
-    <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1580259420262">
+    <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1580492156757">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580259420262" />
+    <state x="656" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580492156757" />
     <state x="656" y="345" key="com.intellij.ide.util.TipDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1580231995877" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1580260604186">
       <screen x="0" y="0" width="1920" height="1040" />
